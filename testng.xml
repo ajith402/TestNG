@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Insurance">
+
+
+	<test thread-count="5" name="BikeInsurance">
+		<classes>
+			<class name="com.testNg.Programs.BikeInsurance" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="5" name="CarInsurace">
+		<classes>
+			<class name="com.testNg.Programs.CarInsurance" />
+
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="PropertyInsurance">
+
+		<classes>
+			<class name="com.testNg.Programs.PropertyInsurance">
+					<methods>
+							<exclude name="insurance.*"></exclude>
+					</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="HealthInsurance">
+
+		<classes>
+			<class name="com.testNg.Programs.HealthInsurance">
+				<methods>			
+					<include name="healthInsurancePremium"></include>
+					<include name="insuranceTenure"></include>	
+				</methods>
+			
+			</class>
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->

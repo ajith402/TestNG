@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Insurance">
+	<test thread-count="5" name="Insurance">
+		<groups>
+			<run>
+					<include name="Sanity"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.testNg.Programs" />
+		</packages>
+
+	</test>
+
+</suite> 
