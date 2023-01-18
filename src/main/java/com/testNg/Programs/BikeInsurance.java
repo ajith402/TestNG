@@ -1,5 +1,6 @@
 package com.testNg.Programs;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BikeInsurance {
@@ -26,6 +27,7 @@ public class BikeInsurance {
 	public void bikePremium() {
 
 		System.out.println("Bike Premium: " + premium);
+		//Assert.assertTrue(false);
 	}
 
 	@Test(priority = 3, groups = {"Regression"}, enabled=false)

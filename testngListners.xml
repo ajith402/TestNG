@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Insurance">
-	<test name="Insurance" parallel="true" thread-count="2">
+	<listeners>
+		
+		<listener class-name="com.testNg.Programs.Listener"/>
+	</listeners>
+	
+	
+	
+	<test name="Insurance">
 		<groups>
 			<run>
 				<include name="Regression" />
@@ -9,26 +16,20 @@
 		</groups>
 
 		<classes>
-			<!--	<class name="com.testNg.Programs.BikeInsurance" />
-			<class name="com.testNg.Programs.CarInsurance" />
+			<class name="com.testNg.Programs.BikeInsurance" />
+		<!--	<class name="com.testNg.Programs.CarInsurance" />
 			<class name="com.testNg.Programs.HealthInsurance">
 				<methods>
 					<exclude name=".*" />
 				</methods>
 			</class>
 			<class name="com.testNg.Programs.PropertyInsurance" /> -->
-			<class name="com.testNg.Programs.TravelInsurance">
-
-				<parameter name="insuranceType" value="Travel Insurance" />
-				<parameter name="premium" value="23000" />
-				<parameter name="tenure" value="3" />
-
-			</class>
-
-
 		</classes>
 	</test>
 
 
-</suite>
+</suite> 
 
+
+
+ 
